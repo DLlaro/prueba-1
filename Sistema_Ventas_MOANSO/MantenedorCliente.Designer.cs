@@ -31,10 +31,13 @@
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.gb_DatosCliente = new System.Windows.Forms.GroupBox();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.dt_FechaRegCliente = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.cb_EstadoCliente = new System.Windows.Forms.CheckBox();
             this.txt_idCiudad = new System.Windows.Forms.TextBox();
+            this.btn_Modificar = new System.Windows.Forms.Button();
+            this.btn_Agregar = new System.Windows.Forms.Button();
             this.txt_idTipoCliente = new System.Windows.Forms.TextBox();
             this.txt_RazonSocial = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,12 +45,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_idCliente = new System.Windows.Forms.TextBox();
             this.lbl_cliente = new System.Windows.Forms.Label();
-            this.btn_Modificar = new System.Windows.Forms.Button();
-            this.btn_Agregar = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Deshabilitar = new System.Windows.Forms.Button();
             this.btn_Editar = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.gb_DatosCliente.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +93,17 @@
             this.gb_DatosCliente.Size = new System.Drawing.Size(831, 179);
             this.gb_DatosCliente.TabIndex = 2;
             this.gb_DatosCliente.TabStop = false;
-            this.gb_DatosCliente.Text = "Datos del Cliente";
+            this.gb_DatosCliente.Text = "Datos del CLIENTE";
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.Location = new System.Drawing.Point(713, 111);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(99, 40);
+            this.btn_Cancelar.TabIndex = 8;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
             // 
             // dt_FechaRegCliente
             // 
@@ -128,6 +138,28 @@
             this.txt_idCiudad.Name = "txt_idCiudad";
             this.txt_idCiudad.Size = new System.Drawing.Size(100, 20);
             this.txt_idCiudad.TabIndex = 8;
+            // 
+            // btn_Modificar
+            // 
+            this.btn_Modificar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Modificar.Location = new System.Drawing.Point(713, 63);
+            this.btn_Modificar.Name = "btn_Modificar";
+            this.btn_Modificar.Size = new System.Drawing.Size(99, 40);
+            this.btn_Modificar.TabIndex = 3;
+            this.btn_Modificar.Text = "Modificar";
+            this.btn_Modificar.UseVisualStyleBackColor = true;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
+            // 
+            // btn_Agregar
+            // 
+            this.btn_Agregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Agregar.Location = new System.Drawing.Point(713, 14);
+            this.btn_Agregar.Name = "btn_Agregar";
+            this.btn_Agregar.Size = new System.Drawing.Size(99, 40);
+            this.btn_Agregar.TabIndex = 4;
+            this.btn_Agregar.Text = "Agregar";
+            this.btn_Agregar.UseVisualStyleBackColor = true;
+            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
             // 
             // txt_idTipoCliente
             // 
@@ -186,28 +218,6 @@
             this.lbl_cliente.TabIndex = 0;
             this.lbl_cliente.Text = "Cliente:";
             // 
-            // btn_Modificar
-            // 
-            this.btn_Modificar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Modificar.Location = new System.Drawing.Point(713, 63);
-            this.btn_Modificar.Name = "btn_Modificar";
-            this.btn_Modificar.Size = new System.Drawing.Size(99, 40);
-            this.btn_Modificar.TabIndex = 3;
-            this.btn_Modificar.Text = "Modificar";
-            this.btn_Modificar.UseVisualStyleBackColor = true;
-            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
-            // 
-            // btn_Agregar
-            // 
-            this.btn_Agregar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Agregar.Location = new System.Drawing.Point(713, 14);
-            this.btn_Agregar.Name = "btn_Agregar";
-            this.btn_Agregar.Size = new System.Drawing.Size(99, 40);
-            this.btn_Agregar.TabIndex = 4;
-            this.btn_Agregar.Text = "Agregar";
-            this.btn_Agregar.UseVisualStyleBackColor = true;
-            this.btn_Agregar.Click += new System.EventHandler(this.btn_Agregar_Click);
-            // 
             // btn_Salir
             // 
             this.btn_Salir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -240,16 +250,6 @@
             this.btn_Editar.Text = "Editar";
             this.btn_Editar.UseVisualStyleBackColor = true;
             this.btn_Editar.Click += new System.EventHandler(this.btn_Editar_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.Location = new System.Drawing.Point(713, 111);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(99, 40);
-            this.btn_Cancelar.TabIndex = 8;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
             // 
             // MantenedorCliente
             // 
