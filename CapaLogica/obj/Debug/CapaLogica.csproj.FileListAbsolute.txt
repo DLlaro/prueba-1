@@ -1,0 +1,11 @@
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\bin\Debug\CapaLogica.dll
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\bin\Debug\CapaLogica.pdb
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\bin\Debug\CapaDatos.dll
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\bin\Debug\CapaEntidad.dll
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\bin\Debug\CapaDatos.pdb
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\bin\Debug\CapaEntidad.pdb
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\obj\Debug\CapaLogica.dll
+E:\Diego\C#\Sistema_Ventas_MOANSO\CapaLogica\obj\Debug\CapaLogica.pdb
